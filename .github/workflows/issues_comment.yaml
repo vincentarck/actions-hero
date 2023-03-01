@@ -3,6 +3,8 @@ name: Create comment on new issues
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
+  
 jobs:
   comment-with-actions:
     runs-on: windows-latest
