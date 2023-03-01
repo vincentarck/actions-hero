@@ -8,5 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: dump github context
-        run: echo '${{ toJSON(gtihub.event) }} | jq '
+        run: echo '${{ toJSON(github.event) }} | jq '
         shell: bash
